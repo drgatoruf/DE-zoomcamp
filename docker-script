@@ -16,4 +16,7 @@ docker run -it --rm test:pandas 16
 
 docker run -it --rm --entrypoint=bash test:pandas
 
+# Postgres-docker, inside Jupyter notebook, excute '!uv add sqlalchemy' to install sqlalchemy, which
+# can be done in Terminal as well, both methods work.
+
 
