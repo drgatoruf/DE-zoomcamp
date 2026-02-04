@@ -1,0 +1,19 @@
+PS1='> '
+
+echo 'PS1="> "' > ~/.bashrc
+
+python list_files.py
+
+echo $(pwd)
+
+git status
+
+git add .
+
+git commit -m 'pipeline'
+
+docker run -it --rm test:pandas 16
+
+docker run -it --rm --entrypoint=bash test:pandas
+
+
