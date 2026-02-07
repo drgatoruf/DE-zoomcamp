@@ -33,3 +33,18 @@ uv 0.10.0 (0ba432459 2026-02-05)
 
 # After running Jupyter Notebook
 uv add --dev sqlalchemy "psycopg[binary,pool]"
+
+# After 'docker-compose up', ingest_data pipeline can be run using:
+docker build -t taxi_ingest:v001 .
+
+docker run -it --rm\
+  --network=pipeline_default \
+  taxi_ingest:v001 \
+    --pg-user=root \
+    --pg-pass=root \
+    --pg-host=pgdatabase \
+    --pg-port=5432 \
+    --pg-db=ny_taxi
+
+
+#   --target-table=yellow_taxi_trips

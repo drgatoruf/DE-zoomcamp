@@ -1,7 +1,7 @@
-[project]
+project = "NYC-trip"
 name = "pipeline"
 version = "0.1.0"
-description = "Add your description here"
+description = "A test data ingestion on 07-FEB-2026"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -11,6 +11,10 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "click>=8.1.7",
     "jupyter>=1.1.1",
     "pgcli>=4.4.0",
+    "psycopg[binary,pool]>=3.3.2",
+    "sqlalchemy>=2.0.46",
+    "tqdm>=4.67.3",
 ]
