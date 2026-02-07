@@ -19,4 +19,7 @@ docker run -it --rm --entrypoint=bash test:pandas
 # Postgres-docker, inside Jupyter notebook, excute '!uv add sqlalchemy' to install sqlalchemy, which
 # can be done in Terminal as well, both methods work.
 
+# 260207. Set up Git Bash on local machine
+echo 'cd /c/Users/isz11/git/data-engineering-zoomcamp/' > ~/.bashrc
+
 
