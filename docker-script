@@ -19,7 +19,17 @@ docker run -it --rm --entrypoint=bash test:pandas
 # Postgres-docker, inside Jupyter notebook, excute '!uv add sqlalchemy' to install sqlalchemy, which
 # can be done in Terminal as well, both methods work.
 
-# 260207. Set up Git Bash on local machine
+# 260207. 
+# Set up Git Bash on local machine
 echo 'cd /c/Users/isz11/git/data-engineering-zoomcamp/' > ~/.bashrc
 
+# Install uv in Git-bash, 'pip install uv'
+# $ uv -V
+# bash: uv: command not found
+# However, 'pip show uv' works fine.
+# Then run below:
+$ python -m uv -V
+uv 0.10.0 (0ba432459 2026-02-05)
 
+# After running Jupyter Notebook
+uv add --dev sqlalchemy "psycopg[binary,pool]"
