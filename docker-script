@@ -48,3 +48,9 @@ docker run -it --rm\
 
 
 #   --target-table=yellow_taxi_trips
+
+# On local Git bash, the following codes helped on some errors:
+pip show uv
+python -m pip show uv
+python -m ...
+
