@@ -99,3 +99,6 @@ uv run python ingest_data.py \
   --pg-port=5432 \
   --pg-db=ny_taxi \
   --target-table=yellow_taxi_trips
+
+# may need to follow the steps to install all libraries in order to build docker image correctly.
+
